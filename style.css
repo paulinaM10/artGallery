@@ -1,14 +1,4 @@
-/* Site Stylesheet
-  1. Global Styles
-  2. Typography Styles
-  3. Structure Styles
-  4. Module Styles
-  5. Component Styles
-  6. Page Styles
-======================================== */
 
-/* 1. Global Styles
-======================================== */
 * {
   box-sizing: border-box;
 }
@@ -103,7 +93,7 @@ img {
 .container {
   margin: 0 auto;
   max-width: 1280px;
-  padding: 0 15px;
+  padding: 30px 15px;
 }
 .container:before, .container:after {
   content: " ";
@@ -179,23 +169,6 @@ button:hover {
   background-color: transparent;
   float: left;
 }
-input, textarea {
-  margin-bottom: 15px;
-  padding: 20px;
-  border: none;
-  box-shadow: none;
-  transition: border-color 0.5s ease;
-  background-color: #333333;
-  color: #FFFFFF;
-  font-size: 16px;
-}
-input {
-  width: 100%;
-  display: block;
-}
-textarea {
-  width: 100%;
-}
 
 /* 6. Page Styles
 ======================================== */
@@ -266,7 +239,7 @@ blockquote footer {
   color: #F9F9F9;
 }
 
-.photo-about, .photo-contact {
+.photo-about  {
   text-align: center;
   padding: 80px 0;
 }
@@ -279,24 +252,7 @@ blockquote footer {
   padding: 0 10%;
   text-align: left;
 }
-.photo-contact {
-  background-color: #555555;
-}
-.photo-contact h2 {
-  color: #FFFFFF;
-  margin-bottom: 30px;
-}
-.photo-contact p {
-  color: #FFFFFF;
-  padding: 0 10%;
-  text-align: left;
-}
-.photo-contact-form {
-  padding: 0 10%;
-}
-.photo-contact-form input:nth-child(1), .photo-contact-form input:nth-child(3), .photo-contact-form input:nth-child(2), .photo-contact-form input:nth-child(4) {
-  margin: 0 0 20px;
-}
+
 
 
 @media (min-width: 585px) {
@@ -311,7 +267,7 @@ blockquote footer {
   .image-box {
     width: calc(33.3333% - 40px);
   }
-  .photo-about p, .photo-contact p, .photo-contact-form {
+  .photo-about p {
     padding: 0 20%;
   }
 }
@@ -323,15 +279,5 @@ blockquote footer {
     width: 70%;
     display: block;
   }
-  .photo-contact-form input {
-    width: 48%;
-    display: inline-block;
-    float: left;
-  }
-  .photo-contact-form input:nth-child(1), .photo-contact-form input:nth-child(3) {
-    margin: 0 2% 20px 0;
-  }
-  .photo-contact-form input:nth-child(2), .photo-contact-form input:nth-child(4) {
-    margin: 0 0 20px 2%;
-  }
+  
 }
